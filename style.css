@@ -1,0 +1,62 @@
+body, html {
+    background-color: #242933;
+    color: #a9b6de;
+    padding-top: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+.center {
+    margin: auto;
+}
+
+.mensaje-campo-error{
+    display: block;
+    margin-top: 8px;
+    color: rgb(187, 2, 2);
+    font-weight: 500;
+    visibility: hidden;
+}
+
+.box-form {
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: solid 2px #373d51;
+    background: #2f3644;
+}
+.box-form p {
+    color:#6f7996;
+    font-weight: 600;
+}
+
+form input {
+    box-sizing: border-box; 
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+    border: none;
+    border: solid 2px transparent
+}
+
+.form-button{
+    margin: 32px 0 8px 0;
+    background-color: #6c63ff;
+    color: white;
+    border: solid 2px black;
+    text-transform: uppercase;
+}
+
+
+/* Iconos de validación */
+.input-error{
+    background: url(images/error-icon.svg) #fff no-repeat;
+    background-position: 360px center;
+}
+
+.input-success{
+    background: url(images/success-icon.svg) #fff no-repeat; 
+    background-position: 360px center;
+}
+
+

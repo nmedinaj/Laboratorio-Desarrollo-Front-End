@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="center box-form">
+            <h1>Create Account</h1>
+            <form id="accessForm" action="destino.php" method="post">
+                <p>Nombre
+                    <input type="text" name="nombre" pattern="[A-Za-z]+" required autocomplete="off">
+                    <span class="mensaje-campo-error mensaje-0">.</span>
+                </p>
+                <p>Email
+                    <input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required autocomplete="off">
+                    <span class="mensaje-campo-error mensaje-1">.</span>
+                </p>
+                <p>Clave
+                    <input type="password" id="pass" name="pass" minlength="8" required autocomplete="off">
+                    <span class="mensaje-campo-error mensaje-2">.</span>
+                </p>
+                <p>Confirme su clave
+                    <input type="password" id="pass2" name="pass2" required autocomplete="off">
+                    <span class="mensaje-campo-error mensaje-3">.</span>
+                </p>
+                <input type="submit" value="Enviar" class="form-button" />
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
